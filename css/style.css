@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+  font-family: "Nunito", sans-serif;font-family: "Nunito", sans-serif;
+  background:rgb(255, 243, 235) ;
+}
+
+h1{
+  font-size: 30px;
+  text-align: center;
+}
+
+.hero {
+  background-image: url("../img/imagem-do-cafe.jpg");
+  background-size: cover;
+  background-position: center ;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f3e9e1;
+  border-radius: 15px;
+  padding: 60px 20px;
+}
+
+h2{
+  font-size: 35px;
+  text-align: center;
+}
+
+p{
+  font-size: 21px;
+  text-align: center;
+}
+
+.bnt-fazer-pedido{
+  padding: 12px 13px;
+  border-radius:5px;
+  font-size: 15px;
+  margin: auto;
+  background: #6f4e37;
+  color: white;
+  border: none;
+  cursor: pointer
+  }
+
+.fazer-pedido:hover{
+  background: #5a3f2c;
+  margin: auto 0;
+}
+
+.diferenciais{
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #ffefdb;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.diferenciais .item strong{
+  font-size: 25px;
+  color: #6f4e37;
+}
+
+.diferenciais .item span{
+  display: block;
+  margin-top: 5px;
+  color: #333;
+}
+
+h3{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+  
+.lista-cardapio{
+  display: flex;
+  gap: 20px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+}
+
+.card img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.descricao-produto{
+  font-size: 15px;
+  flex-grow: 1;
+  min-height: 48px;
+}
+
+.preco{
+  margin-top: auto;
+  margin-bottom: 16px;
+}
+
+.bnt-adicionar{
+  padding: 12px 13px;
+  border-radius:5px;
+  font-size: 15px;
+  margin: auto;
+  background: #6f4e37;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: auto 0;
+  margin-bottom: 20px;
+}
+
+.bnt-ver-cardapio{
+  padding: 10px 11px;
+  border-radius:5px;
+  font-size: 15px;
+  margin: auto;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.como-fazer-pedido{
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background-color:#ffefdb;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+h4{
+  font-size: 23px;
+}
+
+.descricao-do-passos{
+  font-size: 20px;
+  margin-bottom: 40px;
+
+}
+
+.visite-loja{
+  padding: 60px 20px;
+  text-align: center;
+  background: #2c1a12;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.visite-loja address{
+  margin: 24px 0;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.visite-loja .ver-mapa{
+  display: inline-block;
+  padding: 12px 24px;
+  background: #b87333;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.bnt-fazer-pedido{
+  transition: background-color 1s ease;
+}
+
+.bnt-fazer-pedido:hover {
+  background-color: #d18b3c;
+}
+
+.bnt-adicionar{
+  transition: background-color 1s ease;
+}
+
+.bnt-adicionar:hover {
+  background-color: #d18b3c;
+}
+
+.bnt-ver-cardapio{
+  transition: background-color 1s ease;
+}
+
+.bnt-ver-cardapio:hover {
+  background-color: #d18b3c;
+}
+
+@media (max-width: 480px){
+  .lista-cardapio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px){
+  .card{
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px){
+  .diferenciais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .diferenciais .item{
+    width: 90%;
+    margin-bottom: 20px;
+   }
+  }
